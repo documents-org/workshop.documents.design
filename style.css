@@ -47,7 +47,7 @@ article {
     text-align: center;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    padding: 2em;
+    padding: 4em 0;
 }
 
 article:nth-of-type(4n + 4) {

@@ -44,6 +44,7 @@ fs.readFile('liste_sites.csv', (err, data) => {
             site,
         };
     });
+    students.sort((a, b) => a.prenom.toLowerCase() > b.prenom.toLowerCase() ? 1 : -1);
     writeHTML(students);
 });
 
