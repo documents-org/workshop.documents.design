@@ -237,3 +237,11 @@ article a {
 header {
     border-bottom: 1px solid black;
 }
+
+img {
+    display: none;
+}
+
+img.loaded {
+    display: block;
+}

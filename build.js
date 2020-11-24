@@ -23,7 +23,7 @@ const writeHTML = students => {
         const left = Math.random() * dec2 + 50;
         return `
         <article>
-            ${s.image ? `<img class="insecte" src="images/${s.image}" style="top: ${top}%; left: ${left}%; transform: translate(-50%, -50%) rotate(${rotate}deg)"/>` : ''}
+            ${s.image ? `<img class="insecte" data-src="images/${s.image}" style="top: ${top}%; left: ${left}%; transform: translate(-50%, -50%) rotate(${rotate}deg)"/>` : ''}
             <div class="content">
             <h2>${s.prenom} ${s.nom}</h2>
             <h3>${s.annee} ${s.option}</h3>

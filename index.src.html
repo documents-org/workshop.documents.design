@@ -33,5 +33,16 @@
         </div>
         ### CONTENT_HERE ###
     </main>
+    <script>
+        Array.from(document.querySelectorAll('article')).forEach(function(article) {
+            article.addEventListener('mouseenter', function() {
+                var i = article.querySelector('img');
+                if (!i) return;
+                if (i.getAttribute('src')) return;
+                i.setAttribute('src', i.getAttribute('data-src'));
+                i.classList.add('loaded'); 
+            });
+        });
+    </script>
 </body>
 </html>
